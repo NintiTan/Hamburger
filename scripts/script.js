@@ -40,7 +40,7 @@ function addIngredient(ingredientSrc, ingredientName) {
 }
 
 function addIngredientHandler(event) {
-    const ingredientType = event.target.dataset.ingredientType;
+    const ingredientType = event.target.dataset.ingredientType; //https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
     const ingredientSrc = `../images/${ingredientType}.png`;
 
     addIngredient(ingredientSrc, ingredientType);
@@ -77,6 +77,7 @@ function removeFromReceipt(ingredientName) {
 
 function payBill() {
     if (money >= cost) {
+        playAgainButton.style.visibility = "visible"
         money = money - cost
         moneyDisplay.textContent = "You have " + money + " euros."
         costOfHamburger.textContent = "You have paid."
@@ -97,4 +98,12 @@ function payBill() {
 
 payButton.addEventListener('click', payBill)
 
+// Play again
 
+const playAgainButton = document.querySelector(".playagainbutton")
+
+function playAgain() {
+    location.reload()
+}
+
+playAgainButton.addEventListener('click', playAgain)
