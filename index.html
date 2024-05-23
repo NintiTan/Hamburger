@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="money">You have 4 euros.</h1>
+        <p>Click on the ingredients you'd like to add.</p>
+    </div>
+
+    <div class="game">
+        <div class="hamburger">
+            <img src="images/topbun.png" alt="" class="topbun">
+            <div class="addedIngredients"></div>
+            <img src="images/bottombun.png" alt="" class="bottombun">
+        </div>
+    
+        <div class="ingredients">
+            <img src="images/lettuce button.png" alt="" class="lettucebutton" data-ingredient-type="lettuce">
+            <img src="images/burger button.png" alt="" class="burgerbutton" data-ingredient-type="burger">
+            <img src="images/tomato button.png" alt="" class="tomatobutton" data-ingredient-type="tomato">
+        </div>
+    
+        <div class="receipt">
+            <h2>Receipt</h2>
+            <ul class="receiptcontents">
+    
+            </ul>
+            <p class="costofhamburger">Total cost is 0 euros</p>
+            <button>Pay</button>
+        </div>
+        
+    </div>
+
+    <p class="message"></p>
+
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.header {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 1em;
+    margin: 0;
+}
+
+body > p:last-of-type {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 5em;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+
+.hamburger img {
+    width: 10em;
+}
+
+.topbun {
+    order: 1;
+}
+
+.addedIngredients {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+
+.bottombun {
+    order: 3;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 20em;
+}
+
+.ingredients img {
+    width: 3em;
+    height: 3em;
+}
+
+.receipt {
+    background-color: blanchedalmond;
+    padding: 2em;
+    width: 20%;
+}
+
+.receipt h2 {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.receipt p {
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.receipt button {
+    margin-top: 1em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5em 2em;
+}
+
+
